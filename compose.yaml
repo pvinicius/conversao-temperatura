@@ -1,0 +1,16 @@
+services:
+  # nginx:
+  #   container_name: nginx
+  #   image: nginx:latest
+  #   ports:
+  #     - "8080:80"
+
+  postgres:
+    container_name: postgres
+    image: postgres:latest
+    environment:
+      POSTGRES_USER: postgres_user
+      POSTGRES_PASSWORD: postgres_pwd
+      POSTGRES_DB: postgres_db
+    ports:
+      - "5432:5432"
